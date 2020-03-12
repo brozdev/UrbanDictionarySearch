@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A5BBEDD241370EA003373F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBEDC241370EA003373F0 /* AppDelegate.swift */; };
+		8A5BBEDF241370EA003373F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBEDE241370EA003373F0 /* SceneDelegate.swift */; };
+		8A5BBEE4241370EA003373F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BBEE2241370EA003373F0 /* Main.storyboard */; };
+		8A5BBEE6241370EB003373F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BBEE5241370EB003373F0 /* Assets.xcassets */; };
+		8A5BBEE9241370EB003373F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5BBEE7241370EB003373F0 /* LaunchScreen.storyboard */; };
+		8A5BBEFF24137484003373F0 /* SearchTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBEFE24137484003373F0 /* SearchTermViewController.swift */; };
+		8A5BBF012415C8BC003373F0 /* UrbanDictionaryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF002415C8BC003373F0 /* UrbanDictionaryClient.swift */; };
+		8A5BBF032415CC2A003373F0 /* UrbanDictionaryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF022415CC2A003373F0 /* UrbanDictionaryResponse.swift */; };
+		8A5BBF052415D289003373F0 /* DefinitionListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF042415D289003373F0 /* DefinitionListDataSource.swift */; };
+		8A5BBF082415D2BD003373F0 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF072415D2BD003373F0 /* Definition.swift */; };
+		8A5BBF0A2416017D003373F0 /* UrbanDictionaryDefinitionListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF092416017D003373F0 /* UrbanDictionaryDefinitionListDataSource.swift */; };
+		8A5BBF0E24169B0C003373F0 /* DictionaryPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF0D24169B0C003373F0 /* DictionaryPublisher.swift */; };
+		8A5BBF10241740F7003373F0 /* DefinitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BBF0F241740F7003373F0 /* DefinitionCell.swift */; };
+		8AAAADA024174C5C000C9407 /* SortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAAD9F24174C5C000C9407 /* SortView.swift */; };
+		8AAAADA2241888E4000C9407 /* UrbanDictionaryResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAADA1241888E4000C9407 /* UrbanDictionaryResponseTests.swift */; };
+		8AAAADA52418926B000C9407 /* jsonresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 8AAAADA42418926B000C9407 /* jsonresponse.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A5BBEF0241370EB003373F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A5BBED1241370EA003373F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A5BBED8241370EA003373F0;
+			remoteInfo = UrbanDictionarySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A5BBED9241370EA003373F0 /* UrbanDictionarySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanDictionarySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5BBEDC241370EA003373F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A5BBEDE241370EA003373F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8A5BBEE3241370EA003373F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A5BBEE5241370EB003373F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A5BBEE8241370EB003373F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A5BBEEA241370EB003373F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5BBEEF241370EB003373F0 /* UrbanDictionarySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrbanDictionarySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5BBEF5241370EB003373F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5BBEFE24137484003373F0 /* SearchTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermViewController.swift; sourceTree = "<group>"; };
+		8A5BBF002415C8BC003373F0 /* UrbanDictionaryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanDictionaryClient.swift; sourceTree = "<group>"; };
+		8A5BBF022415CC2A003373F0 /* UrbanDictionaryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanDictionaryResponse.swift; sourceTree = "<group>"; };
+		8A5BBF042415D289003373F0 /* DefinitionListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionListDataSource.swift; sourceTree = "<group>"; };
+		8A5BBF072415D2BD003373F0 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		8A5BBF092416017D003373F0 /* UrbanDictionaryDefinitionListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanDictionaryDefinitionListDataSource.swift; sourceTree = "<group>"; };
+		8A5BBF0D24169B0C003373F0 /* DictionaryPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryPublisher.swift; sourceTree = "<group>"; };
+		8A5BBF0F241740F7003373F0 /* DefinitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionCell.swift; sourceTree = "<group>"; };
+		8AAAAD9F24174C5C000C9407 /* SortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortView.swift; sourceTree = "<group>"; };
+		8AAAADA1241888E4000C9407 /* UrbanDictionaryResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanDictionaryResponseTests.swift; sourceTree = "<group>"; };
+		8AAAADA42418926B000C9407 /* jsonresponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonresponse.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A5BBED6241370EA003373F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5BBEEC241370EB003373F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A5BBED0241370EA003373F0 = {
+			isa = PBXGroup;
+			children = (
+				8A5BBEDB241370EA003373F0 /* UrbanDictionarySearch */,
+				8A5BBEF2241370EB003373F0 /* UrbanDictionarySearchTests */,
+				8A5BBEDA241370EA003373F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A5BBEDA241370EA003373F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A5BBED9241370EA003373F0 /* UrbanDictionarySearch.app */,
+				8A5BBEEF241370EB003373F0 /* UrbanDictionarySearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A5BBEDB241370EA003373F0 /* UrbanDictionarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				8A5BBF062415D2A8003373F0 /* Data Contracts */,
+				8A5BBF0C24160D46003373F0 /* Search View Controller */,
+				8A5BBF0B24160D29003373F0 /* Urban Dictionary */,
+				8A5BBEDC241370EA003373F0 /* AppDelegate.swift */,
+				8A5BBEDE241370EA003373F0 /* SceneDelegate.swift */,
+				8A5BBEE2241370EA003373F0 /* Main.storyboard */,
+				8A5BBEE5241370EB003373F0 /* Assets.xcassets */,
+				8A5BBEE7241370EB003373F0 /* LaunchScreen.storyboard */,
+				8A5BBEEA241370EB003373F0 /* Info.plist */,
+			);
+			path = UrbanDictionarySearch;
+			sourceTree = "<group>";
+		};
+		8A5BBEF2241370EB003373F0 /* UrbanDictionarySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AAAADA324189244000C9407 /* Sample Response */,
+				8A5BBEF5241370EB003373F0 /* Info.plist */,
+				8AAAADA1241888E4000C9407 /* UrbanDictionaryResponseTests.swift */,
+			);
+			path = UrbanDictionarySearchTests;
+			sourceTree = "<group>";
+		};
+		8A5BBF062415D2A8003373F0 /* Data Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				8A5BBF042415D289003373F0 /* DefinitionListDataSource.swift */,
+				8A5BBF072415D2BD003373F0 /* Definition.swift */,
+				8A5BBF0D24169B0C003373F0 /* DictionaryPublisher.swift */,
+			);
+			path = "Data Contracts";
+			sourceTree = "<group>";
+		};
+		8A5BBF0B24160D29003373F0 /* Urban Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				8A5BBF002415C8BC003373F0 /* UrbanDictionaryClient.swift */,
+				8A5BBF022415CC2A003373F0 /* UrbanDictionaryResponse.swift */,
+				8A5BBF092416017D003373F0 /* UrbanDictionaryDefinitionListDataSource.swift */,
+			);
+			path = "Urban Dictionary";
+			sourceTree = "<group>";
+		};
+		8A5BBF0C24160D46003373F0 /* Search View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A5BBEFE24137484003373F0 /* SearchTermViewController.swift */,
+				8A5BBF0F241740F7003373F0 /* DefinitionCell.swift */,
+				8AAAAD9F24174C5C000C9407 /* SortView.swift */,
+			);
+			path = "Search View Controller";
+			sourceTree = "<group>";
+		};
+		8AAAADA324189244000C9407 /* Sample Response */ = {
+			isa = PBXGroup;
+			children = (
+				8AAAADA42418926B000C9407 /* jsonresponse.json */,
+			);
+			path = "Sample Response";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A5BBED8241370EA003373F0 /* UrbanDictionarySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5BBEF8241370EB003373F0 /* Build configuration list for PBXNativeTarget "UrbanDictionarySearch" */;
+			buildPhases = (
+				8A5BBED5241370EA003373F0 /* Sources */,
+				8A5BBED6241370EA003373F0 /* Frameworks */,
+				8A5BBED7241370EA003373F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UrbanDictionarySearch;
+			productName = UrbanDictionarySearch;
+			productReference = 8A5BBED9241370EA003373F0 /* UrbanDictionarySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A5BBEEE241370EB003373F0 /* UrbanDictionarySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5BBEFB241370EB003373F0 /* Build configuration list for PBXNativeTarget "UrbanDictionarySearchTests" */;
+			buildPhases = (
+				8A5BBEEB241370EB003373F0 /* Sources */,
+				8A5BBEEC241370EB003373F0 /* Frameworks */,
+				8A5BBEED241370EB003373F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A5BBEF1241370EB003373F0 /* PBXTargetDependency */,
+			);
+			name = UrbanDictionarySearchTests;
+			productName = UrbanDictionarySearchTests;
+			productReference = 8A5BBEEF241370EB003373F0 /* UrbanDictionarySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A5BBED1241370EA003373F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Spiffy Ghost Software, LLC";
+				TargetAttributes = {
+					8A5BBED8241370EA003373F0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8A5BBEEE241370EB003373F0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						TestTargetID = 8A5BBED8241370EA003373F0;
+					};
+				};
+			};
+			buildConfigurationList = 8A5BBED4241370EA003373F0 /* Build configuration list for PBXProject "UrbanDictionarySearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A5BBED0241370EA003373F0;
+			productRefGroup = 8A5BBEDA241370EA003373F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A5BBED8241370EA003373F0 /* UrbanDictionarySearch */,
+				8A5BBEEE241370EB003373F0 /* UrbanDictionarySearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A5BBED7241370EA003373F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5BBEE9241370EB003373F0 /* LaunchScreen.storyboard in Resources */,
+				8A5BBEE6241370EB003373F0 /* Assets.xcassets in Resources */,
+				8A5BBEE4241370EA003373F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5BBEED241370EB003373F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAAADA52418926B000C9407 /* jsonresponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A5BBED5241370EA003373F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5BBEDD241370EA003373F0 /* AppDelegate.swift in Sources */,
+				8A5BBEFF24137484003373F0 /* SearchTermViewController.swift in Sources */,
+				8A5BBF032415CC2A003373F0 /* UrbanDictionaryResponse.swift in Sources */,
+				8A5BBEDF241370EA003373F0 /* SceneDelegate.swift in Sources */,
+				8AAAADA024174C5C000C9407 /* SortView.swift in Sources */,
+				8A5BBF10241740F7003373F0 /* DefinitionCell.swift in Sources */,
+				8A5BBF082415D2BD003373F0 /* Definition.swift in Sources */,
+				8A5BBF0E24169B0C003373F0 /* DictionaryPublisher.swift in Sources */,
+				8A5BBF012415C8BC003373F0 /* UrbanDictionaryClient.swift in Sources */,
+				8A5BBF0A2416017D003373F0 /* UrbanDictionaryDefinitionListDataSource.swift in Sources */,
+				8A5BBF052415D289003373F0 /* DefinitionListDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5BBEEB241370EB003373F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AAAADA2241888E4000C9407 /* UrbanDictionaryResponseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A5BBEF1241370EB003373F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A5BBED8241370EA003373F0 /* UrbanDictionarySearch */;
+			targetProxy = 8A5BBEF0241370EB003373F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A5BBEE2241370EA003373F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A5BBEE3241370EA003373F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A5BBEE7241370EB003373F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A5BBEE8241370EB003373F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A5BBEF6241370EB003373F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A5BBEF7241370EB003373F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A5BBEF9241370EB003373F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HH54WX2L65;
+				INFOPLIST_FILE = UrbanDictionarySearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SGS.UrbanDictionarySearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A5BBEFA241370EB003373F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HH54WX2L65;
+				INFOPLIST_FILE = UrbanDictionarySearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SGS.UrbanDictionarySearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A5BBEFC241370EB003373F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HH54WX2L65;
+				INFOPLIST_FILE = UrbanDictionarySearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SGS.UrbanDictionarySearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UrbanDictionarySearch.app/UrbanDictionarySearch";
+			};
+			name = Debug;
+		};
+		8A5BBEFD241370EB003373F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HH54WX2L65;
+				INFOPLIST_FILE = UrbanDictionarySearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SGS.UrbanDictionarySearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UrbanDictionarySearch.app/UrbanDictionarySearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A5BBED4241370EA003373F0 /* Build configuration list for PBXProject "UrbanDictionarySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5BBEF6241370EB003373F0 /* Debug */,
+				8A5BBEF7241370EB003373F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A5BBEF8241370EB003373F0 /* Build configuration list for PBXNativeTarget "UrbanDictionarySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5BBEF9241370EB003373F0 /* Debug */,
+				8A5BBEFA241370EB003373F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A5BBEFB241370EB003373F0 /* Build configuration list for PBXNativeTarget "UrbanDictionarySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5BBEFC241370EB003373F0 /* Debug */,
+				8A5BBEFD241370EB003373F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A5BBED1241370EA003373F0 /* Project object */;
+}
